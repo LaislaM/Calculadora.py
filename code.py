@@ -1,23 +1,23 @@
 def calculadora ():
-  soma = input('escolha uma operação(soma,subtracao,multiplicacao,divisao,expoente):')
+  operacao = input('escolha uma operação(soma,subtracao,multiplicacao,divisao,expoente):')
   valor_1 =input('informe o primeiro valor:')
   valor_2 =input('infome o segundo valor: ')
-  if soma == "soma":
+  if operacao == "soma":
     resultado = int(valor_1) + int(valor_2)
     print('O resultado da operação é:',resultado)
-  elif soma == "subtracao":
+  elif operacao == "subtracao":
       resultado = int(valor_1) - int(valor_2)
       print('O resultado da operação é:',resultado)
-  elif soma == "multiplicacao":
+  elif operacao == "multiplicacao":
         resultado = int(valor_1) * int(valor_2)
         print('O resultado da operação é:',resultado)
-  elif soma == "divisao":
+  elif operacao == "divisao":
         if int(valor_2) == 0:
             print('não pode executar')
         else:
             resultado = int(valor_1) / int(valor_2)
             print('O resultado da operação é:',resultado)
-  elif soma == "expoente":
+  elif operacao == "expoente":
     resultado = int(valor_1) ** int(valor_2)
     print('O resultado da operação é:',resultado)
   else:
